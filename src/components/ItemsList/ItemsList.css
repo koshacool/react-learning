@@ -40,3 +40,8 @@
   height: auto;
   overflow: visible;
 }
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+}

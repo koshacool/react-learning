@@ -36,7 +36,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ItemsList items={MOCK_ITEMS} />
+        <ItemsList items={MOCK_ITEMS}>
+          footer
+        </ItemsList>
       </div>
     );
   }
