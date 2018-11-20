@@ -1,0 +1,42 @@
+.itemlist {
+  list-style: none;
+}
+
+.itemlist__item {
+  width: 400px;
+  padding: 10px;
+  text-align: left;
+  color: #414141;
+  background: white;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.itemlist__item-name {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.itemlist__item-description {
+  color: #9a9a9a;
+  font-size: 12px;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: .2s all ease;
+}
+
+.itemlist__item-arrow {
+  transition: .2s all ease;
+}
+
+.itemlist__item--expanded .itemlist__item-arrow {
+  transform: rotate(90deg);
+}
+
+.itemlist__item--expanded .itemlist__item-description {
+  padding: 10px 0;
+  height: auto;
+  overflow: visible;
+}
